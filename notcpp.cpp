@@ -12,6 +12,7 @@ p {
 // Your "rules" basically but with different syntax.
 // '$bg-color: black' defines a variable with default value 'black'
 grid($bg-color: black, $txt-color: white, $space-between-elements) {
+
 	grid: obj1 obj2 obj3
 		  ____ obj4 ____  // underscore '_' for blank space
 		  obj5 obj6 obj7;
@@ -19,6 +20,8 @@ grid($bg-color: black, $txt-color: white, $space-between-elements) {
 	grid-gap: $space-between-elements;
 
 	color: $bg-color; // 'color' is background-color on non-text elements
+
+	////////////////////////////////////////////////////////////////
 
 	p {
 		color: $txt-color; // 'color' is text-color on text elements
@@ -32,4 +35,5 @@ grid($bg-color: black, $txt-color: white, $space-between-elements) {
 	obj4 {
 		color: red; // override for this grid element only
 	}
+
 }
