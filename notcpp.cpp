@@ -1,4 +1,4 @@
-import other-styles; // imports 'other_styles.css' (or other extension for this lang)
+include other-styles; // includes 'other_styles.css' (or other extension for this lang)
 
 // Global variables like in Sass.
 $def-txt-color: black;
@@ -22,7 +22,6 @@ grid($bg-color: black, $txt-color: white, $space-between-elements) {
 
 	p {
 		color: $txt-color; // 'color' is text-color on text elements
-		font-size: 
 	}
 
 	obj {
