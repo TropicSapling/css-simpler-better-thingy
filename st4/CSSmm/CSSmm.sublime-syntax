@@ -33,6 +33,13 @@ variables:
   frequency_units: (?i:Hz|kHz)\b
   resolution_units: (?i:dpi|dpcm|dppx)\b
 
+  # Predefined Color Values (Standard Set)
+  standard_colors: |-
+    \b(?xi:
+        aqua | black | blue | fuchsia | gray | green | lime | maroon | navy
+      | olive | orange | purple | red | silver | teal | white | yellow
+    ){{break}}
+
   # HTML tags
   html_tags: |-
     (?x:
@@ -154,11 +161,12 @@ contexts:
       push: double-quoted-string
 
     # Keywords
-    - match: '\b({{keywords}}|{{html_tags}})\b'
+    - match: '\b{{keywords}}\b|{{html_tags}}'
       scope: entity.name.tag.html.css
 
-    - match: '\b[A-Z]{{identifier}}?'
-      scope: constant.language.css
+    # Colours
+    - match: '{{standard_colors}}'
+      scope: support.constant.color.w3c.standard.css
 
     # Numbers
     - match: '\b{{numbers}}\b'
