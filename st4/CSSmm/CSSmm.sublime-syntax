@@ -172,9 +172,11 @@ contexts:
     - match: '{{standard_colors}}'
       scope: support.constant.color.w3c.standard.css
 
-    # Numbers
-    - match: '\b{{numbers}}\b'
-      scope: constant.numeric.css
+    # Numbers & units
+    - match: '\b({{numbers}})({{units}})?\b'
+      captures:
+        1: constant.numeric.value.css
+        12: constant.numeric.suffix.css
 
     # Operators
     - include: operators
