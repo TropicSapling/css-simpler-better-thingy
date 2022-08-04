@@ -10,11 +10,112 @@ variables:
   # Identifiers
   identifier: '(?:(?:[[:alpha:]][_\-[:alnum:]]*|_[_[:alnum:]]+)\b)' # include a word boundary at the end to ensure all possible characters are consumed, to prevent catastrophic backtracking
 
+  # Identifier Break
+  break: (?=[[^-_[:alnum:]\\]&&[[:ascii:]]]|\Z)
+
+  # Units (TODO: remove unused)
+  units: |-
+    (?x:
+      %
+    | {{absolute_lengths}}
+    | {{angle_units}}
+    | {{duration_units}}
+    | {{font_relative_lengths}}
+    | {{frequency_units}}
+    | {{resolution_units}}
+    | {{viewport_percentage_lengths}}
+    )
+  font_relative_lengths: (?i:em|ex|ch|rem)\b
+  viewport_percentage_lengths: (?i:vw|vh|vmin|vmax)\b
+  absolute_lengths: (?i:cm|mm|q|in|pt|pc|px|fr)\b
+  angle_units: (?i:deg|grad|rad|turn)\b
+  duration_units: (?i:s|ms)\b
+  frequency_units: (?i:Hz|kHz)\b
+  resolution_units: (?i:dpi|dpcm|dppx)\b
+
+  # HTML tags
+  html_tags: |-
+    (?x:
+      {{html_inline_tags}}
+    | {{html_text_tags}}
+    | {{html_section_tags}}
+    | {{html_table_tags}}
+    | {{html_embedded_tags}}
+    | {{html_forms_tags}}
+    | {{html_media_tags}}
+    | {{html_interactive_tags}}
+    | {{html_script_tags}}
+    | {{html_web_tags}}
+    | {{html_markup_tags}}
+    | {{html_header_tags}}
+    | {{html_root_tags}}
+    | {{html_deprecated_tags}}
+    )
+
+  html_root_tags: |-
+    \b(?xi: html | body ){{break}}
+
+  html_header_tags: |-
+    \b(?xi: base | head | link | meta | script | style | title ){{break}}
+
+  html_section_tags: |-
+    \b(?xi:
+        address | article | aside | footer | header | h1 | h2 | h3 | h4 | h5 | h6
+      | hgroup | main | nav | section
+    ){{break}}
+
+  html_text_tags: |-
+    \b(?xi:
+        blockquote | cite | dd | dt | dl | div | figcaption | figure | hr | li
+      | ol | p | pre | ul
+    ){{break}}
+
+  html_inline_tags: |-
+    \b(?xi:
+        a | abbr | b | bdi | bdo | br | code | data | time | dfn | em | i | kbd
+      | mark | q | rb | ruby | rp | rt | rtc | s | samp | small | span | strong
+      | sub | sup | u | var | wbr
+    ){{break}}
+
+  html_media_tags: |-
+    \b(?xi: area | audio | source | img | map | track | video ){{break}}
+
+  html_embedded_tags: |-
+    \b(?xi: embed | iframe | object | param | picture | source ){{break}}
+
+  html_script_tags: |-
+    \b(?xi: canvas | noscript | script ){{break}}
+
+  html_markup_tags: |-
+    \b(?xi: del | ins ){{break}}
+
+  html_table_tags: |-
+    \b(?xi:
+        caption | col | colgroup | table | tbody | tr | td | tfoot | th | thead
+    ){{break}}
+
+  html_forms_tags: |-
+    \b(?xi:
+        button | datalist | option | fieldset | label | form | input | legend
+      | meter | optgroup | select | output | progress | textarea
+    ){{break}}
+
+  html_interactive_tags: |-
+    \b(?xi: details | dialog | menu | summary ){{break}}
+
+  html_web_tags: |-
+    \b(?xi: slot | template ){{break}}
+
+  html_deprecated_tags: |-
+    \b(?xi:
+        acronym | applet | basefont | bgsound | big | blink | center | command
+      | content | dir | element | font | frame | frameset | image | isindex
+      | keygen | listing | marquee | menuitem | multicol | nextid | nobr
+      | noembed | noframes | plaintext | shadow | spacer | strike | tt | xmp
+    ){{break}}
+
   # Keywords
   keywords: '(include)'
-
-  # Declarations
-  decl_sym: '(decl(\s+(sym(indies|block)))|enclosed\s+by|with\s+escaper)'
 
   # Numbers
   digits:  '(0(x[0-9a-fA-F_]+|o[0-7_]+|b[01_]+)|[0-9_]+)'
@@ -53,8 +154,8 @@ contexts:
       push: double-quoted-string
 
     # Keywords
-    - match: '\b{{keywords}}\b'
-      scope: keyword.control.css
+    - match: '\b({{keywords}}|{{html_tags}})\b'
+      scope: entity.name.tag.html.css
 
     - match: '\b[A-Z]{{identifier}}?'
       scope: constant.language.css
