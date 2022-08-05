@@ -2,7 +2,7 @@
 <plist version="1.0">
 <dict>
 	<key>scope</key>
-	<string>source.css comment.block</string>
+	<string>source.cssmm comment.block</string>
 	<key>settings</key>
 	<dict>
 		<!--

@@ -39,3 +39,11 @@ grid($bg-color: black, $txt-color: white, $space-between-elements) {
 	}
 
 }
+
+// Also possible to mix in with normal CSS
+@css {
+	@font-face {
+		font-family: Viking;
+		src: url(../fonts/Viking.ttf);
+	}
+}

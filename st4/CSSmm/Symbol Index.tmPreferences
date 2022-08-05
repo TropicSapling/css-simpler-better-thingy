@@ -3,9 +3,9 @@
 <dict>
 	<key>scope</key>
 	<string>
-		source.css entity.other.attribute-name.class - source.css entity.other.attribute-name punctuation.definition,
-		source.css entity.other.attribute-name.id - source.css entity.other.attribute-name punctuation.definition,
-		source.css entity.other.custom-property
+		source.cssmm entity.other.attribute-name.class - source.cssmm entity.other.attribute-name punctuation.definition,
+		source.cssmm entity.other.attribute-name.id - source.cssmm entity.other.attribute-name punctuation.definition,
+		source.cssmm entity.other.custom-property
 	</string>
 	<key>settings</key>
 	<dict>

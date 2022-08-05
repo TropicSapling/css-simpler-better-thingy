@@ -1,0 +1,10 @@
+@css {
+	@font-face {
+		font-family: Viking;
+		src: url(../fonts/Viking.ttf);
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'David Libre', serif;
+}

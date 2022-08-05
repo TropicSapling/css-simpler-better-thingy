@@ -3,7 +3,7 @@
 <dict>
 	<key>scope</key>
 	<string>
-		source.css variable.other.custom-property
+		source.cssmm variable.other.custom-property
 	</string>
 	<key>settings</key>
 	<dict>
