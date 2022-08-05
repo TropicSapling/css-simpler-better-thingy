@@ -27,12 +27,14 @@ grid($bg-color: black, $txt-color: white, $space-between-elements) {
 		color: $txt-color; // 'color' is text-color on text elements
 	}
 
+	// no '>' for 'grid obj {...}'
 	obj {
 		width: height: 200px; // same width & height
 		color: blue; // grid elements blue by default
 	}
 
-	obj4 {
+	// '>' for 'grid > obj4 {...}'
+	> obj4 {
 		color: red; // override for this grid element only
 	}
 
