@@ -201,7 +201,8 @@ contexts:
         - include: general
 
     # Declarations & definitions
-    # TODO ...
+    - match: '\b{{identifier}}\s*(?=[({])'
+      scope: entity.other.attribute-name.class.css
 
   ################################################################################
   ##                                                                            ##
@@ -393,11 +394,3 @@ contexts:
     - match: '(?=\))'
       pop: true
     - include: general
-
-  ################################################################################
-  ##                                                                            ##
-  ##                   ====  DECLARATIONS & DEFINITIONS  ====                   ##
-  ##                                                                            ##
-  ################################################################################
-
-  # TODO ...
