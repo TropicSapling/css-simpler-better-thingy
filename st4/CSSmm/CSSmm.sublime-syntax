@@ -350,8 +350,8 @@ contexts:
     - match: '[$]'
       scope: keyword.operator.css
       push: op-dollar
-    - match: '\b_\b'
-      scope: keyword.operator.css
+    - match: '>'
+      scope: keyword.operator.combinator.css
 
   op-dollar:
     - include: universal
