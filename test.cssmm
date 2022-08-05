@@ -29,7 +29,7 @@ grid($bg-color: black, $txt-color: white, $space-between-elements) {
 
 	// no '>' for 'grid obj {...}'
 	obj {
-		width: height: 200px; // same width & height
+		width, height: 200px; // same width & height
 		color: blue; // grid elements blue by default
 	}
 
