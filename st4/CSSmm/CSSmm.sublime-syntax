@@ -56,7 +56,6 @@ variables:
     | {{html_markup_tags}}
     | {{html_header_tags}}
     | {{html_root_tags}}
-    | {{html_deprecated_tags}}
     )
 
   html_root_tags: |-
@@ -112,14 +111,6 @@ variables:
 
   html_web_tags: |-
     \b(?xi: slot | template ){{break}}
-
-  html_deprecated_tags: |-
-    \b(?xi:
-        acronym | applet | basefont | bgsound | big | blink | center | command
-      | content | dir | element | font | frame | frameset | image | isindex
-      | keygen | listing | marquee | menuitem | multicol | nextid | nobr
-      | noembed | noframes | plaintext | shadow | spacer | strike | tt | xmp
-    ){{break}}
 
   # Keywords
   keywords: '(include)'
