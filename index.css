@@ -4,7 +4,38 @@ p {
 	color: black;
 }
 
-/* TODO ... */
+.grid-black-white-100 {
+	grid-template-areas: "obj1 obj2 obj3"
+	                     ".    obj4 .   "
+	                     "obj5 obj6 obj7";
+
+	grid-gap: 100px;
+
+	background-color: black;
+}
+
+.grid-black-white-100 .p {
+	color: white;
+}
+
+.grid-black-white-100 .obj {
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	margin: 10px;
+}
+
+.grid-black-white-100 > .obj4 {
+	background-color: red;
+}
+
+.obj1 {grid-area: obj1;}
+.obj2 {grid-area: obj2;}
+.obj3 {grid-area: obj3;}
+.obj4 {grid-area: obj4;}
+.obj5 {grid-area: obj5;}
+.obj6 {grid-area: obj6;}
+.obj7 {grid-area: obj7;}
 
 @font-face {
 	font-family: Viking;
