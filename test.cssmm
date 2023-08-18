@@ -31,6 +31,7 @@ grid($bg-color: black, $txt-color: white, $space-between-elements) {
 	obj {
 		width, height: 200px; // same width & height
 		color: blue; // grid elements blue by default
+		margin: 10px; // NOTE: margin & width/height relate to eachother in expected way
 	}
 
 	// '>' for 'grid > obj4 {...}'
