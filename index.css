@@ -1,10 +1,16 @@
 /* this is going to be the compiled CSS, but for now it is manually translated */
 
+body {
+	margin: 0;
+}
+
 p {
 	color: black;
 }
 
 .grid-black-white-100 {
+	display: grid;
+
 	grid-template-areas: "obj1 obj2 obj3"
 	                     ".    obj4 .   "
 	                     "obj5 obj6 obj7";
