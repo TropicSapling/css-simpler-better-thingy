@@ -20,7 +20,7 @@ body {
 	background-color: black;
 }
 
-.grid-black-white-100 {
+.grid-black-white-100 * {
 	color: white;
 }
 
