@@ -4,7 +4,7 @@ body {
 	margin: 0;
 }
 
-* {
+span {
 	color: black;
 }
 
@@ -20,8 +20,9 @@ body {
 	background-color: black;
 }
 
-.grid-black-white-100 * {
+.grid-black-white-100 span {
 	color: white;
+	background-color: orange;
 }
 
 .grid-black-white-100 .obj {
