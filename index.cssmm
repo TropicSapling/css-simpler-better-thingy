@@ -1,3 +1,4 @@
+include legacy-css;   // includes 'legacy_css.css'
 include other-styles; // includes 'other_styles.cssmm'
 
 // Global variables like in Sass.
@@ -5,9 +6,7 @@ $def-txt-color: black;
 
 // We say text is black by default,
 // then override later for text in grid.
-text {
-	color: $def-txt-color;
-}
+* {txt-color: $def-txt-color}
 
 // Your "rules" basically but with different syntax.
 // '$bg-color: black' defines a variable with default value 'black'
@@ -19,27 +18,20 @@ grid($bg-color: black, $txt-color: white, $space-between-elements) {
 
 	grid-gap: $space-between-elements;
 
-	color: $bg-color; // 'color' is background-color on non-text elements
+	bg-color: $bg-color;
+	txt-color: $txt-color;
 
 	////////////////////////////////////////////////////////////////
-
-	// `text` is all forms of text (i.e. <p>, <h2>, but also text without any text tag)
-	text {
-		color: $txt-color; // 'color' is text-color on text elements
-		bg: orange; // background to the text
-	}
 
 	// no '>' for 'grid obj {...}'
 	obj {
 		width, height: 200px; // same width & height
-		color: blue; // grid elements blue by default
+		bg-color: blue; // grid elements blue by default
 		margin: 10px; // NOTE: margin & width/height relate to eachother in expected way
 	}
 
 	// '>' for 'grid > obj4 {...}'
-	> obj4 {
-		color: red; // override for this grid element only
-	}
+	> obj4 {bg-color: red} // override for this grid element only
 
 }
 

@@ -1,12 +1,8 @@
 /* this is going to be the compiled CSS, but for now it is manually translated */
 
-body {
-	margin: 0;
-}
+body {margin: 0}
 
-span {
-	color: black;
-}
+* {color: black}
 
 .grid-black-white-100 {
 	display: grid;
@@ -18,11 +14,7 @@ span {
 	grid-gap: 100px;
 
 	background-color: black;
-}
-
-.grid-black-white-100 span {
 	color: white;
-	background-color: orange;
 }
 
 .grid-black-white-100 .obj {
@@ -32,17 +24,15 @@ span {
 	margin: 10px;
 }
 
-.grid-black-white-100 > .obj4 {
-	background-color: red;
-}
+.grid-black-white-100 > .obj4 {background-color: red}
 
-.obj1 {grid-area: obj1;}
-.obj2 {grid-area: obj2;}
-.obj3 {grid-area: obj3;}
-.obj4 {grid-area: obj4;}
-.obj5 {grid-area: obj5;}
-.obj6 {grid-area: obj6;}
-.obj7 {grid-area: obj7;}
+.obj1 {grid-area: obj1}
+.obj2 {grid-area: obj2}
+.obj3 {grid-area: obj3}
+.obj4 {grid-area: obj4}
+.obj5 {grid-area: obj5}
+.obj6 {grid-area: obj6}
+.obj7 {grid-area: obj7}
 
 @font-face {
 	font-family: Viking;

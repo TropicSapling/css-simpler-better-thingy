@@ -1,6 +1,7 @@
 %YAML 1.2
 ---
 # See http://www.sublimetext.com/docs/syntax.html
+# Borrows heavily from CSS and Triforce ST4 syntax
 version: 2
 name: CSS--
 file_extensions:
@@ -150,7 +151,10 @@ contexts:
       captures:
         1: keyword.control.directive.css
       embed: scope:source.css
-      escape: '}'
+      escape: '^}'
+
+    - match: \*
+      scope: variable.language.wildcard.asterisk.css
 
     # Strings
     - match: ''''
