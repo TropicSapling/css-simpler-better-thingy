@@ -4,7 +4,7 @@ body {
 	margin: 0;
 }
 
-p {
+* {
 	color: black;
 }
 
@@ -20,7 +20,7 @@ p {
 	background-color: black;
 }
 
-.grid-black-white-100 p {
+.grid-black-white-100 {
 	color: white;
 }
 

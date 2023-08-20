@@ -5,7 +5,7 @@ $def-txt-color: black;
 
 // We say text is black by default,
 // then override later for text in grid.
-p {
+text {
 	color: $def-txt-color;
 }
 
@@ -23,8 +23,10 @@ grid($bg-color: black, $txt-color: white, $space-between-elements) {
 
 	////////////////////////////////////////////////////////////////
 
-	p {
+	// `text` is all forms of text (i.e. <p>, <h2>, but also text without any text tag)
+	text {
 		color: $txt-color; // 'color' is text-color on text elements
+		bg: orange; // background to the text
 	}
 
 	// no '>' for 'grid obj {...}'
