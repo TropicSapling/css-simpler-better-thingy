@@ -14,8 +14,9 @@ body {margin: 0}
 	grid-gap: 100px;
 
 	background-color: black;
-	color: white;
 }
+
+.grid-black-white-100 * {color: white}
 
 .grid-black-white-100 .obj {
 	width: 200px;
