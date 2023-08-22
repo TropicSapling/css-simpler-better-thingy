@@ -1,10 +1,34 @@
 /* CSS-- changes to default CSS properties */
 
-body {margin: 0}
+body, h1, h2, h3, h4, h5, h6 {margin: 0}
 
 h1 {
     /* margin replaced with padding for less weirdness */
-    margin: 0;
     padding-block-end: 0.67em;
     padding-block-start: 0.67em;
+}
+
+h2 {
+    padding-block-end: 0.83em;
+    padding-block-start: 0.83em;
+}
+
+h3 {
+    padding-block-end: 1em;
+    padding-block-start: 1em;
+}
+
+h4 {
+    padding-block-end: 1.33em;
+    padding-block-start: 1.33em;
+}
+
+h5 {
+    padding-block-end: 1.67em;
+    padding-block-start: 1.67em;
+}
+
+h6 {
+    padding-block-end: 2.33em;
+    padding-block-start: 2.33em;
 }
