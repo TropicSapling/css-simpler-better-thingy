@@ -8,7 +8,7 @@ $def-txt-color: black;
 // then override later for text in grid.
 * {txt-color: $def-txt-color}
 
-test {width, height: 100%}
+test {height: 100%}
 
 // Your "rules" basically but with different syntax.
 // '$bg-color: black' defines a variable with default value 'black'

@@ -1,0 +1,10 @@
+/* CSS-- changes to default CSS properties */
+
+body {margin: 0}
+
+h1 {
+    /* margin replaced with padding for less weirdness */
+    margin: 0;
+    padding-block-end: 0.67em;
+    padding-block-start: 0.67em;
+}
