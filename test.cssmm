@@ -8,6 +8,8 @@ $def-txt-color: black;
 // then override later for text in grid.
 * {txt-color: $def-txt-color}
 
+test {width, height: 100%}
+
 // Your "rules" basically but with different syntax.
 // '$bg-color: black' defines a variable with default value 'black'
 grid($bg-color: black, $txt-color: white, $space-between-elements) {
@@ -34,6 +36,9 @@ grid($bg-color: black, $txt-color: white, $space-between-elements) {
 	> obj4 {bg-color: red} // override for this grid element only
 
 }
+
+obj8 {align: top left}
+obj9 {align: bottom+10% center-10%}
 
 // Also possible to mix in with normal CSS
 @css {
