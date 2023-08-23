@@ -1,1 +1,18 @@
-.tropicsapling {height: 100%}
+@font-face {
+	font-family: Viking;
+	src: url(../fonts/Viking.ttf);
+}
+
+/* NOTE: Custom scrollbar doesn't work on IE nor Firefox */
+/* This is not really important though, website looks fine anyway */
+::-webkit-scrollbar             {width: 10px}
+::-webkit-scrollbar-track       {background: #f1f1f1}
+::-webkit-scrollbar-thumb       {background: #aaa}
+::-webkit-scrollbar-thumb:hover {background: #777}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
+
+.tropicsapling {
+	padding: 2%;
+	height: 100%;
+}
