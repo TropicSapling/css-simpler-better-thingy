@@ -18,3 +18,5 @@ tropicsapling {
 	padding: 2%;
 	height: 100%;
 }
+
+scroller {align: bottom+10% center}
