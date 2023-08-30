@@ -22,8 +22,9 @@ h1, h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 
 .scroller {
 	position: absolute;
-	justify-self: center;
 	bottom: 10%;
+	left: 0;
+	margin-left: 50%;
 	width: 3rem;
 	/*filter: invert(1);*/
 }
