@@ -19,4 +19,8 @@ tropicsapling {
 	height: 100%;
 }
 
-scroller {align: bottom+10% center}
+scroller {
+	align: bottom+10% center;
+	width: 3rem;
+	//filter: invert(1);
+}
