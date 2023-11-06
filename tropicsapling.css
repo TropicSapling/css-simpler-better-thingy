@@ -12,7 +12,8 @@
 ::-webkit-scrollbar-thumb       {background: #aaa}
 ::-webkit-scrollbar-thumb:hover {background: #777}
 
-h1, h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
+h1                 {font: 6em 'Yatra One', cursive}
+h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 
 .tropicsapling {
 	position: relative;

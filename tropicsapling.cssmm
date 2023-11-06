@@ -12,7 +12,8 @@
 	::-webkit-scrollbar-thumb:hover {background: #777}
 }
 
-h1, h2, h3, h4, h5, h6 {font: 'David Libre', serif}
+h1                 {font: 6em 'Yatra One', cursive}
+h2, h3, h4, h5, h6 {font: 'David Libre', serif}
 
 tropicsapling {
 	padding: 2%;
