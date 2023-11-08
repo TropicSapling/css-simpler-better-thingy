@@ -7,13 +7,13 @@
 ::-webkit-scrollbar-thumb       {background: #aaa}
 ::-webkit-scrollbar-thumb:hover {background: #777}
 
-*                  {color: white}
 h1                 {font: 6em 'Yatra One', cursive}
 h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 
 .tropicsapling {
 	position: relative;
 	height: 100%;
+	color: white;
 }
 
 .tropicsapling > div {padding: 0 2%}
@@ -27,12 +27,17 @@ h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 }
 
 .scroller {
+	display: grid;
 	position: absolute;
 	bottom: 10%;
 	left: 0;
-	margin-left: 50%;
-	width: 3rem;
+	width: 100%;
 	filter: invert(1);
+}
+
+.scroller img {
+	justify-self: center;
+	width: 3em;
 }
 
 @media (orientation: portrait) {
@@ -41,4 +46,5 @@ h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 	h1, h2, h3, h4, h5, h6 {text-align: center}
 
 	.tropicsapling > div {padding-top: 10%}
+	.scroller img {width: 6em}
 }

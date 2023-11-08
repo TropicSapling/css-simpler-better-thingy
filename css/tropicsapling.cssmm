@@ -7,7 +7,6 @@
 	::-webkit-scrollbar-thumb:hover {background: #777}
 }
 
-*                  {txt-color: white}
 h1                 {font: 6em 'Yatra One', cursive}
 h2, h3, h4, h5, h6 {font: 'David Libre', serif}
 
@@ -24,6 +23,8 @@ tropicsapling {
 		padding: 0 2%;
 		@mobile padding-top: 10%;
 	}
+
+	txt-color: white;
 }
 
 main-bg {
@@ -36,6 +37,6 @@ main-bg {
 
 scroller {
 	align: bottom+10% center;
-	width: 3rem;
+	width: 3rem [@mobile 6em];
 	filter: invert(1);
 }
