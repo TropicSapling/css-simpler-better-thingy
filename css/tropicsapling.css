@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: Viking;
-	src: url(fonts/Viking.ttf);
+	src: url(../fonts/Viking.ttf);
 }
 
 /* NOTE: Custom scrollbar doesn't work on IE nor Firefox */
