@@ -18,6 +18,10 @@ h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 
 @media (orientation: portrait) {
 	h1, h2, h3, h4, h5, h6 {text-align: center}
+
+	.tropicsapling > div {
+		padding-top: 10%;
+	}
 }
 
 .tropicsapling {
@@ -25,10 +29,7 @@ h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 	height: 100%;
 }
 
-.tropicsapling > div {
-	padding: 2%;
-	padding-top: 0;
-}
+.tropicsapling > div {padding: 0 2%}
 
 .main-bg {
     position: absolute;
