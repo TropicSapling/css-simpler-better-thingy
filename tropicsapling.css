@@ -17,7 +17,7 @@ h1                 {font: 6em 'Yatra One', cursive}
 h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 
 @media (orientation: portrait) {
-	h1 {text-align: center}
+	h1, em {text-align: center}
 }
 
 .tropicsapling {
