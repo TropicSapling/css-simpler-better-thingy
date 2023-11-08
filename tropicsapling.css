@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: Viking;
-	src: url(../fonts/Viking.ttf);
+	src: url(fonts/Viking.ttf);
 }
 
 /* NOTE: Custom scrollbar doesn't work on IE nor Firefox */
@@ -43,7 +43,5 @@ h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 @media (orientation: portrait) {
 	h1, h2, h3, h4, h5, h6 {text-align: center}
 
-	.tropicsapling > div {
-		padding-top: 10%;
-	}
+	.tropicsapling > div {padding-top: 10%}
 }
