@@ -11,7 +11,11 @@
 h1                 {font: 6em 'Yatra One', cursive}
 h2, h3, h4, h5, h6 {font: 'David Libre', serif}
 
-@mobile h1, h2, h3, h4, h5, h6 {align: _ center}
+@mobile {
+	h1                     {font-size: 8em}
+	h2                     {font-size: 3em}
+	h1, h2, h3, h4, h5, h6 {align: _ center}
+}
 
 tropicsapling {
 	height: 100%;

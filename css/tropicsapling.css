@@ -36,6 +36,8 @@ h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 }
 
 @media (orientation: portrait) {
+	h1                     {font-size: 8em}
+	h2                     {font-size: 3em}
 	h1, h2, h3, h4, h5, h6 {text-align: center}
 
 	.tropicsapling > div {padding-top: 10%}
