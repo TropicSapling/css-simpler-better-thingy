@@ -16,14 +16,6 @@
 h1                 {font: 6em 'Yatra One', cursive}
 h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 
-@media (orientation: portrait) {
-	h1, h2, h3, h4, h5, h6 {text-align: center}
-
-	.tropicsapling > div {
-		padding-top: 10%;
-	}
-}
-
 .tropicsapling {
 	position: relative;
 	height: 100%;
@@ -46,4 +38,12 @@ h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 	margin-left: 50%;
 	width: 3rem;
 	filter: invert(1);
+}
+
+@media (orientation: portrait) {
+	h1, h2, h3, h4, h5, h6 {text-align: center}
+
+	.tropicsapling > div {
+		padding-top: 10%;
+	}
 }
