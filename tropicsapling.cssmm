@@ -21,7 +21,10 @@ h2, h3, h4, h5, h6 {font: 'David Libre', serif}
 tropicsapling {
 	height: 100%;
 
-	> div {padding: 0 2%}
+	> div {
+		padding: 0 2%;
+		@mobile padding-top: 10%;
+	}
 }
 
 main-bg {
