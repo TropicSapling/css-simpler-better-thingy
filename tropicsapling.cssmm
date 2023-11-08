@@ -17,9 +17,12 @@ h1                 {font: 6em 'Yatra One', cursive}
 h2, h3, h4, h5, h6 {font: 'David Libre', serif}
 
 tropicsapling {
-	padding: 2%;
-	padding-top: 0;
 	height: 100%;
+
+	> div {
+		padding: 2%;
+		padding-top: 0;
+	}
 }
 
 main-bg {
