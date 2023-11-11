@@ -18,21 +18,23 @@ h2, h3, h4, h5, h6 {font: 'David Libre', serif}
 
 tropicsapling {
 	height: 100%;
+	txt-color: white;
+
+	layers: [
+		top: scroller;
+		default;
+		bot: main-bg;
+	];
 
 	> div {
 		padding: 0 2%;
 		@mobile padding-top: 10%;
 	}
-
-	txt-color: white;
 }
 
 main-bg {
-    position: absolute;
+	width, height: 100%;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
 }
 
 scroller {
