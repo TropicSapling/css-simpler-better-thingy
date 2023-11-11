@@ -14,22 +14,24 @@ test {height: 100%}
 // '$bg-color: black' defines a variable with default value 'black'
 grid($bg-color: black, $txt-color: white, $space-between-elements) {
 
-	grid: obj1 obj2 obj3
+	grid: ==============
+		  obj1 obj2 obj3
 		  ____ obj4 ____  // underscore '_' for blank space
-		  obj5 obj6 obj7;
+		  obj5 obj6 obj7
+		  ==============
 
-	grid-gap: $space-between-elements;
+	grid-gap: $space-between-elements
 
-	bg-color: $bg-color;
-	txt-color: $txt-color;
+	bg-color: $bg-color
+	txt-color: $txt-color
 
 	////////////////////////////////////////////////////////////////
 
 	// no '>' for 'grid obj {...}'
 	obj {
-		width, height: 200px; // same width & height
-		bg-color: blue; // grid elements blue by default
-		margin: 10px; // NOTE: margin & width/height relate to eachother in expected way
+		width, height: 200px // same width & height
+		bg-color: blue // grid elements blue by default
+		margin: 10px // NOTE: margin & width/height relate to eachother in expected way
 	}
 
 	// '>' for 'grid > obj4 {...}'
