@@ -20,25 +20,29 @@ tropicsapling {
 	height: 100%
 	txt-color: white
 
-	layers: ========
+	layers: ==========
 			scroller
 			default
-			main-bg
-			========
+			section-bg
+			==========
 
-	> div {
+	section-bg {
+		width, height: 100%
+		object-fit: cover
+	}
+
+	section-content {
 		padding: 0 2%
 		@mobile padding-top: 10%
+
+		scroller {
+			align: bottom+10% center
+			width: 3rem [@mobile 6em]
+			filter: invert(1)
+		}
 	}
 }
 
-main-bg {
-	width, height: 100%
-    object-fit: cover
-}
-
-scroller {
-	align: bottom+10% center
-	width: 3rem [@mobile 6em]
-	filter: invert(1)
+intro {
+	// TODO
 }
