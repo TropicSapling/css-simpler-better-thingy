@@ -15,10 +15,10 @@ h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 	height: 100%;
 }
 
-.tropicsapling > div {padding: 0 2%}
-.tropicsapling *     {color: white}
+.tropicsapling * {color: white}
+.section-content {padding: 0 2%}
 
-.main-bg {
+.section-bg {
     position: absolute;
     object-fit: cover;
     width: 100%;
@@ -45,6 +45,6 @@ h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 	h2                     {font-size: 3em}
 	h1, h2, h3, h4, h5, h6 {text-align: center}
 
-	.tropicsapling > div {padding-top: 10%}
+	.section-content {padding-top: 10%}
 	.scroller img {width: 6em}
 }
