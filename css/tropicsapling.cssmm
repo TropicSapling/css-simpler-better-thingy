@@ -1,19 +1,19 @@
 @css {
 	/* NOTE: Custom scrollbar doesn't work on IE nor Firefox */
 	/* This is not really important though, website looks fine anyway */
-	::-webkit-scrollbar             {width: 10px}
-	::-webkit-scrollbar-track       {background: #f1f1f1}
-	::-webkit-scrollbar-thumb       {background: #aaa}
-	::-webkit-scrollbar-thumb:hover {background: #777}
+	::-webkit-scrollbar             { width: 10px         }
+	::-webkit-scrollbar-track       { background: #f1f1f1 }
+	::-webkit-scrollbar-thumb       { background: #aaa    }
+	::-webkit-scrollbar-thumb:hover { background: #777    }
 }
 
-h1                 {font: 6em 'Yatra One', cursive}
-h2, h3, h4, h5, h6 {font: 'David Libre', serif}
+h1                 { font: 6em 'Yatra One', cursive }
+h2, h3, h4, h5, h6 { font: 'David Libre', serif     }
 
 @mobile {
-	h1                     {font-size: 8em}
-	h2                     {font-size: 3em}
-	h1, h2, h3, h4, h5, h6 {align: _ center}
+	h1                     { font: 8em       }
+	h2                     { font: 3em       }
+	h1, h2, h3, h4, h5, h6 { align: _ center }
 }
 
 tropicsapling {
@@ -34,6 +34,21 @@ tropicsapling {
 	section-content {
 		padding: 0 2%
 		@mobile padding-top: 10%
+
+		page-quote {
+			font: 'David Libre', serif
+
+			q {
+				font: 1.5em bold
+
+				@mobile {
+					font: 2.5em
+					align: _ center
+				}
+			}
+
+			span { font: small [@mobile large] normal }
+		}
 
 		scroller {
 			align: bottom+10% center

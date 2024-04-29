@@ -153,6 +153,12 @@ contexts:
       embed: scope:source.css
       escape: '^}'
 
+    - match: '@{{identifier}}'
+      scope: keyword.control.directive.css
+
+    - match: 'default'
+      scope: support.constant
+
     - match: \*
       scope: variable.language.wildcard.asterisk.css
 
@@ -166,7 +172,7 @@ contexts:
       scope: entity.name.tag.html.css
 
     # Properties
-    - match: '\b{{identifier}}(?=[,:])\b'
+    - match: '\b{{identifier}}(?=\s*[,:])\b'
       scope: support.type.property-name.css
 
     # Colours

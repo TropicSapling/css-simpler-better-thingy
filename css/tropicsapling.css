@@ -26,6 +26,18 @@ h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
     z-index: -1;
 }
 
+.page-quote {font-family: 'David Libre', serif}
+
+.page-quote q {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.page-quote span {
+	font-size: small;
+	font-weight: normal;
+}
+
 .scroller {
 	display: grid;
 	position: absolute;
@@ -47,4 +59,11 @@ h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 
 	.section-content {padding-top: 10%}
 	.scroller img {width: 6em}
+
+	.page-quote q {
+		font-size: 2.5em;
+		text-align: center;
+	}
+
+	.page-quote span {font-size: large}
 }
