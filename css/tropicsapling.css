@@ -2,21 +2,21 @@
 
 /* NOTE: Custom scrollbar doesn't work on IE nor Firefox */
 /* This is not really important though, website looks fine anyway */
-::-webkit-scrollbar             {width: 10px}
-::-webkit-scrollbar-track       {background: #f1f1f1}
-::-webkit-scrollbar-thumb       {background: #aaa}
-::-webkit-scrollbar-thumb:hover {background: #777}
+::-webkit-scrollbar             { width: 10px         }
+::-webkit-scrollbar-track       { background: #f1f1f1 }
+::-webkit-scrollbar-thumb       { background: #aaa    }
+::-webkit-scrollbar-thumb:hover { background: #777    }
 
-h1                 {font: 6em 'Yatra One', cursive}
-h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
+h1                 { font: 6em 'Yatra One', cursive    }
+h2, h3, h4, h5, h6 { font-family: 'David Libre', serif }
 
 .tropicsapling {
 	position: relative;
 	height: 100%;
 }
 
-.tropicsapling * {color: white}
-.section-content {padding: 0 2%}
+.tropicsapling * { color: white  }
+.section-content { padding: 0 2% }
 
 .section-bg {
     position: absolute;
@@ -26,7 +26,7 @@ h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
     z-index: -1;
 }
 
-.page-quote {font-family: 'David Libre', serif}
+.page-quote { font-family: 'David Libre', serif }
 
 .page-quote q {
 	font-size: 1.5em;
@@ -53,17 +53,15 @@ h2, h3, h4, h5, h6 {font-family: 'David Libre', serif}
 }
 
 @media (orientation: portrait) {
-	h1                     {font-size: 8em}
-	h2                     {font-size: 3em}
-	h1, h2, h3, h4, h5, h6 {text-align: center}
+	h1                     { font-size: 8em     }
+	h2                     { font-size: 3em     }
+	h1, h2, h3, h4, h5, h6 { text-align: center }
 
-	.section-content {padding-top: 10%}
-	.scroller img {width: 6em}
+	.section-content { padding-top: 10% }
 
-	.page-quote q {
-		font-size: 2.5em;
-		text-align: center;
-	}
+	.page-quote      { text-align: center }
+	.page-quote q    { font-size: 2.5em   }
+	.page-quote span { font-size: large   }
 
-	.page-quote span {font-size: large}
+	.scroller img { width: 6em }
 }

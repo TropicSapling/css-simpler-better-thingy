@@ -10,6 +10,7 @@
 h1                 { font: 6em 'Yatra One', cursive }
 h2, h3, h4, h5, h6 { font: 'David Libre', serif     }
 
+// TODO: Consider changing to mobile-first and replacing with `@desktop`
 @mobile {
 	h1                     { font: 8em       }
 	h2                     { font: 3em       }
@@ -36,17 +37,10 @@ tropicsapling {
 		@mobile padding-top: 10%
 
 		page-quote {
+			align: _ left [@mobile center]
 			font: 'David Libre', serif
 
-			q {
-				font: 1.5em bold
-
-				@mobile {
-					font: 2.5em
-					align: _ center
-				}
-			}
-
+			q    { font: 1.5em [@mobile 2.5em] bold   }
 			span { font: small [@mobile large] normal }
 		}
 
