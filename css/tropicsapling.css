@@ -1,7 +1,5 @@
 /* this is going to be the compiled CSS, but for now it is manually translated */
 
-/* NOTE: Custom scrollbar doesn't work on IE nor Firefox */
-/* This is not really important though, website looks fine anyway */
 ::-webkit-scrollbar             { width: 10px         }
 ::-webkit-scrollbar-track       { background: #f1f1f1 }
 ::-webkit-scrollbar-thumb       { background: #aaa    }
@@ -45,11 +43,22 @@ h2, h3, h4, h5, h6 { font-family: 'David Libre', serif }
 	left: 0;
 	width: 100%;
 	filter: invert(1);
+	animation: jump 4s infinite;
 }
 
 .scroller img {
 	justify-self: center;
 	width: 3em;
+}
+
+@keyframes jump {
+	0%, 75%, 100% {
+		transform: translateY(0);
+	}
+	
+	82.5% {
+		transform: translateY(0.5rem);
+	}
 }
 
 @media (orientation: portrait) {

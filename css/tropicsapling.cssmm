@@ -1,6 +1,4 @@
 @css {
-	/* NOTE: Custom scrollbar doesn't work on IE nor Firefox */
-	/* This is not really important though, website looks fine anyway */
 	::-webkit-scrollbar             { width: 10px         }
 	::-webkit-scrollbar-track       { background: #f1f1f1 }
 	::-webkit-scrollbar-thumb       { background: #aaa    }
@@ -15,6 +13,16 @@ h2, h3, h4, h5, h6 { font: 'David Libre', serif     }
 	h1                     { font: 8em       }
 	h2                     { font: 3em       }
 	h1, h2, h3, h4, h5, h6 { align: _ center }
+}
+
+@animation jump {
+	0%, 75%, 100% {
+		transform: translateY(0)
+	}
+	
+	82.5% {
+		transform: translateY(0.5rem)
+	}
 }
 
 tropicsapling {
@@ -48,6 +56,7 @@ tropicsapling {
 			align: bottom+10% center
 			width: 3rem [@mobile 6em]
 			filter: invert(1)
+			animation: jump 4s infinite
 		}
 	}
 }
